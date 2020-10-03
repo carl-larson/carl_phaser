@@ -1,4 +1,4 @@
-import BoardPlugin from '../../node_modules/phaser3-rex-plugins/plugins/board-plugin.js';
+// import rexboardplugin from '../../node_modules/phaser3-rex-plugins/dist/rexboardplugin.min.js';
 
 const config = {
     type: Phaser.AUTO,
@@ -7,9 +7,9 @@ const config = {
     backgroundColor: 0x000000,
     scene: [Scene1, Scene2],
     plugins: {
-        global: [{
+        scene: [{
             key: 'rexBoard',
-            plugin: BoardPlugin,
+            plugin: rexboardplugin,
             mapping: 'rexBoard'
         }]
     },

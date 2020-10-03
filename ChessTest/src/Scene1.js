@@ -6,10 +6,10 @@ class Scene1 extends Phaser.Scene {
     }
 
     preload() {
-        // this.preload.scenePlugin({
-        //     key: 'rexboardplugin',
-        //     src: '../../node_modules/'
-        // })
+        this.load.spritesheet("pieces", "assets/chess-sprite.png", {
+            frameWidth: 45,
+            frameHeight: 45
+        });
 
     }
 
